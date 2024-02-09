@@ -5,7 +5,30 @@
 }
 body{
     margin: auto;
+    max-width: 1200px;
 }
+
 .title-text{
     font-family: 'Shadows Into Light';
+    color: white
+}
+.header__nav{
+    background-color: #1a1a1a;
+}
+.header__menu-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+.header__menu-item a{
+    font-family: 'Shadows Into Light';
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+}
+.header__menu-item a:hover{
+    text-decoration: underline;
+    color: #aa00ff;
+    transition: 0.5s ease-out; 
 }
