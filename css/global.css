@@ -8,28 +8,126 @@ body{
     max-width: 1200px;
 }
 
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
 .title-text{
     font-family: 'Shadows Into Light';
-    color: white
-}
-.header__nav{
-    background-color: #1a1a1a;
+    color: white;
 }
 .header__menu-list{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     list-style: none;
 }
 .header__menu-item a{
     font-family: 'Shadows Into Light';
-    color: white;
+    color: #666;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 24px;
+    margin-right: 30px;
 }
 .header__menu-item a:hover{
     text-decoration: underline;
     color: #aa00ff;
     filter: drop-shadow(0 0 0.50rem #aa00ff);
     transition: 0.5s ease-out; 
+}
+.sign{
+    font-family: 'Shadows Into Light';
+    font-size: 24px;
+    color: #666;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-self: flex-end;
+}
+.icons{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: #666;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.icons li {
+    display: block;
+    position: relative;
+    color: #666;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px !important;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.icons li:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+.icons li:hover:before{
+    filter: blur(3px);
+    transform: scale(1.2);
+}
+.icons li:nth-child(1)::before{
+    background: #0066ff;
+}
+.icons li:nth-child(1):hover:before{
+    box-shadow: 0 0 15px #0066ff;
+}
+.icons li:nth-child(1):hover{
+    color: #0052cc;
+    box-shadow: 0 0 15px #0066ff;
+    -shadow: 0 0 15px #0066ff;
+}
+
+.icons li:nth-child(2)::before{
+    background: #4db8ff;
+}
+.icons li:nth-child(2):hover:before{
+    box-shadow: 0 0 15px #4db8ff;
+}
+.icons li:nth-child(2):hover{
+    color: #008ae6;
+    box-shadow: 0 0 15px #4db8ff;
+    -shadow: 0 0 15px #4db8ff;
+}
+
+.icons li:nth-child(3)::before{
+    background: #ff0360;
+}
+.icons li:nth-child(3):hover:before{
+    box-shadow: 0 0 15px #ff0360;
+}
+.icons li:nth-child(3):hover{
+    color: #e60054;
+    box-shadow: 0 0 15px #ff0360;
+    -shadow: 0 0 15px #ff0360;
+}
+
+.icons li:nth-child(4)::before{
+    background: #ff1a1a;
+}
+.icons li:nth-child(4):hover:before{
+    box-shadow: 0 0 15px #ff1a1a;
+}
+.icons li:nth-child(4):hover{
+    color: #e60000;
+    box-shadow: 0 0 15px #ff1a1a;
+    -shadow: 0 0 15px #ff1a1a;
 }
