@@ -11,7 +11,13 @@ body{
 .header__nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.main-section{
+    display: grid;
+    justify-content: center;
 }
 .title-text{
     font-family: 'Shadows Into Light';
@@ -31,9 +37,9 @@ body{
 }
 .header__menu-item a:hover{
     text-decoration: underline;
-    color: #aa00ff;
-    filter: drop-shadow(0 0 0.50rem #aa00ff);
-    transition: 0.5s ease-out; 
+    color: #ffffff;
+    filter: drop-shadow(0 0 0.50rem #ffffff);
+    font-weight: 500;
 }
 .sign{
     font-family: 'Shadows Into Light';
@@ -42,8 +48,12 @@ body{
     background-color: transparent;
     cursor: pointer;
     border: none;
-    display: flex;
     justify-self: flex-end;
+}
+.sign:hover{
+    color: #ffffff;
+    filter: drop-shadow(0 0 0.50rem #ffffff); 
+    font-weight: 500;
 }
 .icons{
     list-style: none;
@@ -83,51 +93,21 @@ body{
 .icons li:hover:before{
     filter: blur(3px);
     transform: scale(1.2);
+    background: #ffffff;
 }
-.icons li:nth-child(1)::before{
-    background: #0066ff;
+.icons li:hover:before{
+    box-shadow: 0 0 15px #ffffff;
 }
-.icons li:nth-child(1):hover:before{
-    box-shadow: 0 0 15px #0066ff;
+.icons li:hover{
+    color: #ffffff;
+    box-shadow: 0 0 15px #ffffff;
+    -shadow: 0 0 15px #ffffff;
 }
-.icons li:nth-child(1):hover{
-    color: #0052cc;
-    box-shadow: 0 0 15px #0066ff;
-    -shadow: 0 0 15px #0066ff;
+.background-image{
+    max-width: 900px;
 }
-
-.icons li:nth-child(2)::before{
-    background: #4db8ff;
-}
-.icons li:nth-child(2):hover:before{
-    box-shadow: 0 0 15px #4db8ff;
-}
-.icons li:nth-child(2):hover{
-    color: #008ae6;
-    box-shadow: 0 0 15px #4db8ff;
-    -shadow: 0 0 15px #4db8ff;
-}
-
-.icons li:nth-child(3)::before{
-    background: #ff0360;
-}
-.icons li:nth-child(3):hover:before{
-    box-shadow: 0 0 15px #ff0360;
-}
-.icons li:nth-child(3):hover{
-    color: #e60054;
-    box-shadow: 0 0 15px #ff0360;
-    -shadow: 0 0 15px #ff0360;
-}
-
-.icons li:nth-child(4)::before{
-    background: #ff1a1a;
-}
-.icons li:nth-child(4):hover:before{
-    box-shadow: 0 0 15px #ff1a1a;
-}
-.icons li:nth-child(4):hover{
-    color: #e60000;
-    box-shadow: 0 0 15px #ff1a1a;
-    -shadow: 0 0 15px #ff1a1a;
+.background-image:hover{
+    transform:rotate(360deg);
+    filter: drop-shadow(0 0 0.50rem #ffffff);
+    transition: transform 35.5s ease-out;
 }
